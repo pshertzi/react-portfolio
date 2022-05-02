@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react";
+import Nav from './components/nav';
 import About from './components/about';
-import './App.css';
 
 function App() {
-  return (
-    <div>
-      <main>
-        <About></About>
-      </main>
-    </div>
 
-  );
-}
+	return (
+	  <div>
+		  <Nav></Nav>
+		<main>
+		  <About></About>
+		</main>
+	  </div>
+	);
+  }
 
-export default App;
+export default App; 
