@@ -1,35 +1,54 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import resume from "../../assets/resume.pdf";
+import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Nav() {
+function Nav(props) {
+  const {
+    categories = [],
+    setCurrentCategory,
+    currentCategory,
+  } = props;
+
+
+  const handleClick = (item) => {
+    console.log(item);
+    return item;
+  };
+
   return (
     <header className="flex-row px-1">
       <h2>
-        <a href="/">Home</a>
+        <a data-testid="link" href="/">
+          <span role="img" aria-label="camera"> 📸</span> Oh Snap!
+        </a>
       </h2>
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <Link to="/portfolio">
-              <p className="nav">Portfolio</p>
-            </Link>
+            <a data-testid="about" href="#about">
+              About me
+            </a>
           </li>
-          <li className="mx-2">
-            <Link to="/about">
-              <p className="nav">About</p>
-            </Link>
+          <li className={"mx-2"}>
+            <span onClick={() => handleClick('Contact')}>
+              Contact
+            </span>
           </li>
-          <li className="mx-2">
-            <Link to="/contact">
-              <p className="nav">Contact</p>
-            </Link>
-          </li>
-          <li className="mx-2">
-            <Link to="/resume">
-              <p className="nav">Resume</p>
-            </Link>
-          </li>
+          {categories.map((category) => (
+            <li
+              className={`mx-1 ${
+                currentCategory.name === category.name
+                }`}
+              key={category.name}
+            >
+              <span
+                onClick={() => {
+                  setCurrentCategory(category);
+                }}
+              >
+                {capitalizeFirstLetter(category.name)}
+              </span>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
