@@ -1,52 +1,39 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import resume from "../../assets/resume.pdf";
 
 function Nav() {
-    function portfolioSelected(name) {
-        console.log(`${name} clicked`)
-      }
-
-    const portfolios = [
-        {
-          name: "commercial",
-          description:
-            "Photos of grocery stores, food trucks, and other commercial projects",
-        },
-        { name: "portraits", description: "Portraits of people in my life" },
-        { name: "food", description: "Delicious delicacies" },
-        {
-          name: "landscape",
-          description: "Fields, farmhouses, waterfalls, and the beauty of nature",
-        },
-      ];
-    
-
-
-    return (
-      <header>
-          <nav>
-                <ul className="flex-row">
-                <li className="mx-2">
-                    <a href="#about">
-                        About me
-                    </a>
-                </li>
-                <li>
-                    <span>Contact</span>
-                </li>
-                {portfolios.map((portfolio) => (
-                    <li
-                        className="mx-1"
-                        key={portfolio.name}
-                    >
-                        <span onClick={portfolioSelected} >
-                        {portfolio.name}
-                        </span>
-                    </li>
-                ))}
-                </ul>
-            </nav>
-      </header>
-    );
-  }
+  return (
+    <header className="flex-row px-1">
+      <h2>
+        <a href="/">Home</a>
+      </h2>
+      <nav>
+        <ul className="flex-row">
+          <li className="mx-2">
+            <Link to="/portfolio">
+              <p className="nav">Portfolio</p>
+            </Link>
+          </li>
+          <li className="mx-2">
+            <Link to="/about">
+              <p className="nav">About</p>
+            </Link>
+          </li>
+          <li className="mx-2">
+            <Link to="/contact">
+              <p className="nav">Contact</p>
+            </Link>
+          </li>
+          <li className="mx-2">
+            <Link to="/resume">
+              <p className="nav">Resume</p>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
 
 export default Nav;
