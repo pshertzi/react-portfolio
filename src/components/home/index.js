@@ -1,5 +1,4 @@
 import React from "react";
-import ContactForm from "../contact";
 import profileImage from "../../assets/cover/paul-photo.jpg";
 import Resume from "../../assets/resume.pdf";
 
@@ -13,12 +12,14 @@ function Home() {
       <div class="flex-child-element">
         <h1 id="about">About Me</h1>
         <p>
-          Heavily experienced customer service manager with a broad tech and
-          systems knowledge base. Skilled in people and project management and
-          able to work well under pressure. Able to move fast, utilize multiple
-          resources, and lead a team effectively. Solutions driven and looking
-          to transition into the tech field and incorporate web development and
-          coding into my career post education.
+          I graduated from The Florida State University in 2015 with a batchlers
+          degree in Business. After completing an managment training programs in
+          Nasvile and Orlando, I moved to Maui Hawaii and worked for the
+          Sheraton Maui. I spent Three years in Maui and worked several hotel
+          manager positions. I moved back to my hometown Tampa Florida in 2021
+          and after working a half year as a bar manager at the JW Waterside I
+          decied to change careers and recived a Web Development and Coding
+          Certification at Vanderbilt University.
         </p>
         <button>
           <a
@@ -26,6 +27,7 @@ function Home() {
             style={{ textDecoration: "none", color: "#ffffff" }}
             target="_blank"
             rel="noreferrer"
+            download
           >
             Check out my resume!
           </a>

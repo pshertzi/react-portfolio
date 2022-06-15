@@ -6,6 +6,11 @@ const PhotoList = ({ category }) => {
   const [currentPhoto, setCurrentPhoto] = useState();
   const [photos] = useState([
     {
+      name: "Paul Shertzinger",
+      category: "me",
+      link: "https://www.canva.com/design/DAE1KUo7v6Y/U_nvagew7zFmpAW9l5n3kA/view?utm_content=DAE1KUo7v6Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
+    },
+    {
       name: "Hazai Watchers",
       category: "Portfolio",
       description:
@@ -16,19 +21,29 @@ const PhotoList = ({ category }) => {
       name: "Access Tennessee",
       category: "Portfolio",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+        "Access Tennessee is an app that strives to make this state more accommodating and accessible to all people. By giving individuals the chance to rate and directly interact with businesses in the community about what accommodations are needed for specific types of impairments/ disabilities",
+      link: "https://access-tennesee.herokuapp.com/",
+    },
+    {
+      name: "Lettuce Talk",
+      category: "Portfolio",
+      description:
+        "This food tracker app allows an individual to track the nutrition of the foods they eat, search for recipes involving the foods they're craving, and search for nearby locations of grocery stores with those items available.",
+      link: "https://access-tennesee.herokuapp.com/",
     },
     {
       name: "Sheraton",
       category: "Skills",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+        "Managed Front Office, F&B, and was acting MOD of hotel during COVID operations.  Scheduled and implemented procedures for outlet projects such as Dinner Under the Stars, holiday programing, and group events. Opened and managed new lobby bar post renovation.",
+      link: "https://www.marriott.com/en-us/hotels/hnmsi-sheraton-maui-resort-and-spa/overview/",
     },
     {
       name: "Jw Marriott",
       category: "Skills",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie",
+        "Managed Food and beverage operations for hotel's most popular outlet through multiple concerts, sporting events, and private parties for high profile guests.",
+      link: "https://www.marriott.com/en-us/hotels/tpajd-jw-marriott-tampa-water-street/events/meetings-at-jw-marriott-tampa-water-street/",
     },
   ]);
 

@@ -19,7 +19,7 @@ function Nav(props) {
       <nav>
         <ul className="flex-row">
           <li className={`mx-2 ${contactSelected && "navActive"}`}>
-            <span onClick={() => setContactSelected(true)}>Portfolio</span>
+            <span onClick={() => setContactSelected(true)}>About me</span>
           </li>
           {categories.map((category) => (
             <li
