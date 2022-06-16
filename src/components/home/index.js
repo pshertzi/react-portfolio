@@ -1,6 +1,6 @@
 import React from "react";
 import profileImage from "../../assets/cover/paul-photo.jpg";
-import Resume from "../../assets/resume.pdf";
+import Resume from "../../assets/Resume.pdf";
 
 function Home() {
   return (
@@ -21,6 +21,26 @@ function Home() {
           decied to change careers and recived a Web Development and Coding
           Certification at Vanderbilt University.
         </p>
+        <button>
+          <a
+            href="https://github.com/pshertzi"
+            style={{ textDecoration: "none", color: "#ffffff" }}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>
+        </button>
+        <button>
+          <a
+            href=" https://www.linkedin.com/in/paul-shertzinger-5a9869b3/"
+            style={{ textDecoration: "none", color: "#ffffff" }}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Linkden
+          </a>
+        </button>
         <button>
           <a
             href={Resume}

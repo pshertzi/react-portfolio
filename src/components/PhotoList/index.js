@@ -16,6 +16,7 @@ const PhotoList = ({ category }) => {
       description:
         "Hanzai Watchers or Crime Watchers is an application made with React on the frontend and MongoDB on the backend that allows users to connect with other users around the world about crime information in their area. It also allows users to submit crime tips and search for crime in their zip code. The goal of this app is to make people feel like they have a voice. If you see a crime being committed or feel like you or someone else could be in trouble this is a perfect way to get in touch and figure out the best course of action whether it be turning to other users for guidance or submitting a tip.",
       link: "https://hanzai-watchers.herokuapp.com/",
+      github: "https://github.com/pshertzi/anime_crime-watchers",
     },
     {
       name: "Access Tennessee",
@@ -23,6 +24,7 @@ const PhotoList = ({ category }) => {
       description:
         "Access Tennessee is an app that strives to make this state more accommodating and accessible to all people. By giving individuals the chance to rate and directly interact with businesses in the community about what accommodations are needed for specific types of impairments/ disabilities",
       link: "https://access-tennesee.herokuapp.com/",
+      github: "https://github.com/pshertzi/Access-Tennessee",
     },
     {
       name: "Lettuce Talk",
@@ -30,6 +32,7 @@ const PhotoList = ({ category }) => {
       description:
         "This food tracker app allows an individual to track the nutrition of the foods they eat, search for recipes involving the foods they're craving, and search for nearby locations of grocery stores with those items available.",
       link: "https://access-tennesee.herokuapp.com/",
+      github: "https://github.com/pshertzi/Food-tracker-",
     },
     {
       name: "Sheraton",

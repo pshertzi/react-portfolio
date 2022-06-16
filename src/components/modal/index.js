@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 const Modal = ({ onClose, currentPhoto }) => {
-  const { name, description, category, link, index } = currentPhoto;
+  const { name, description, category, link, github, index } = currentPhoto;
 
   return (
     <div className="modalBackdrop">
@@ -23,6 +24,18 @@ const Modal = ({ onClose, currentPhoto }) => {
             Check it out!
           </a>
         </button>
+        {github && (
+          <button>
+            <a
+              href={github}
+              style={{ textDecoration: "none", color: "#ffffff" }}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+          </button>
+        )}
       </div>
     </div>
   );
