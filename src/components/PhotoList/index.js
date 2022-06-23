@@ -7,7 +7,7 @@ const PhotoList = ({ category }) => {
   const [photos] = useState([
     {
       name: "Paul Shertzinger",
-      category: "me",
+      category: "Welcome",
       link: "https://www.canva.com/design/DAE1KUo7v6Y/U_nvagew7zFmpAW9l5n3kA/view?utm_content=DAE1KUo7v6Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
     },
     {
@@ -36,14 +36,14 @@ const PhotoList = ({ category }) => {
     },
     {
       name: "Sheraton",
-      category: "Skills",
+      category: "Summary",
       description:
         "Managed Front Office, F&B, and was acting MOD of hotel during COVID operations.  Scheduled and implemented procedures for outlet projects such as Dinner Under the Stars, holiday programing, and group events. Opened and managed new lobby bar post renovation.",
       link: "https://www.marriott.com/en-us/hotels/hnmsi-sheraton-maui-resort-and-spa/overview/",
     },
     {
       name: "Jw Marriott",
-      category: "Skills",
+      category: "Summary",
       description:
         "Managed Food and beverage operations for hotel's most popular outlet through multiple concerts, sporting events, and private parties for high profile guests.",
       link: "https://www.marriott.com/en-us/hotels/tpajd-jw-marriott-tampa-water-street/events/meetings-at-jw-marriott-tampa-water-street/",

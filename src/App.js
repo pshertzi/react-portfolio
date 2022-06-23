@@ -1,23 +1,23 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Nav from "./components/Nav";
-import About from "./components/About";
+
 import Footer from "./components/footer";
-import Home from "./components/home";
-import Contact from "./components/contact";
+import About from "./components/About";
 import Gallery from "./components/Gallery";
 
 function App() {
   const [categories] = useState([
     {
-      name: "me",
-      description: `Hello and Welcome to my Portfolio. Click on the images for a more informartion about the item clicked. My github and Linkden page can be acessed via the footer. I hope you enjoy!`,
+      name: "Welcome",
+      description: `Welcome to my Portfolio! I am a Full Stack web developer with a backgound in Business Managment. Ive recently earned a certificate in full stack development from the
+      Vanderbilt University Coding Boot Camp. Skilled in JavaScript, HTML, CSS, React.js, MySQL, NoSQL, responsive web design, Node, Express.`,
     },
     {
       name: "Portfolio",
       description: "List of past Projects",
     },
-    { name: "Skills", description: "Past expereince" },
+    { name: "Summary", description: "Past expereince" },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
@@ -42,7 +42,7 @@ function App() {
               </>
             ) : (
               <>
-                <Home></Home>
+                <About></About>
               </>
             )}
           </main>

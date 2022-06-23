@@ -1,22 +1,67 @@
 import React from "react";
+import profileImage from "../../assets/cover/paul-photo.jpg";
+import Resume from "../../assets/Resume.pdf";
 
 function About() {
   return (
-    <section className="my-5, float-parent-element">
-      <h1 id="about">Who am I?</h1>
-      <img className="my-2" style={{ width: "100%" }} alt="cover" />
-      <div className="my-2">
-        <p class="aboutMe">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          bibendum turpis sed ex condimentum molestie. Mauris condimentum lectus
-          ut ornare dignissim. Mauris faucibus urna mi, ac feugiat metus aliquam
-          maximus. Proin aliquam justo nec diam vulputate vestibulum. Aenean
-          sollicitudin nulla at nisi ornare, nec suscipit massa eleifend. Morbi
-          tristique justo vel turpis sollicitudin, et tristique velit convallis.
-          In hac habitasse platea dictumst. Phasellus mattis nunc sed orci
-          consequat laoreet. Praesent id nisl nibh. Curabitur imperdiet
-          ultricies mollis. In hac habitasse platea dictumst.
+    <section class="flex-parent-element">
+      <div class="flex-child-element">
+        <h1 id="about">Paul Shertzinger</h1>
+        <img src={profileImage} className="my-2" alt="cover" />
+      </div>
+      <div class="flex-child-element">
+        <h1 id="about">About Me</h1>
+        <p>
+          I graduated from The Florida State University in 2015 with a batchlers
+          degree in Business. After completing an managment training programs in
+          Nasvile and Orlando, I moved to Maui Hawaii and worked for the
+          Sheraton Maui. I spent Three years in Maui and worked several hotel
+          manager positions. I moved back to my hometown Tampa Florida in 2021
+          and after working a half year as a bar manager at the JW Waterside I
+          decied to change careers and recived a Web Development and Coding
+          Certification at Vanderbilt University.
         </p>
+        <button>
+          <a
+            href="https://github.com/pshertzi"
+            style={{ textDecoration: "none", color: "#ffffff" }}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>
+        </button>
+        <button>
+          <a
+            href=" https://www.linkedin.com/in/paul-shertzinger-5a9869b3/"
+            style={{ textDecoration: "none", color: "#ffffff" }}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Linkden
+          </a>
+        </button>
+        <button>
+          <a
+            href={Resume}
+            style={{ textDecoration: "none", color: "#ffffff" }}
+            target="_blank"
+            rel="noreferrer"
+            download
+          >
+            Check out my resume!
+          </a>
+        </button>
+        <button>
+          <a
+            href="mailto: pshertzi@gmail.com"
+            style={{ textDecoration: "none", color: "#ffffff" }}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Contact me!
+          </a>
+        </button>
       </div>
     </section>
   );

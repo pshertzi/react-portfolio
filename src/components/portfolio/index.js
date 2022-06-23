@@ -1,5 +1,5 @@
 import React from "react";
-import Projects from "../PhotoList";
+import Projects from "../project";
 
 function Portfolio() {
   return (
