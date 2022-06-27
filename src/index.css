@@ -325,3 +325,34 @@ a {
   color: white;
   text-align: center;
 }
+
+@media screen and (max-width: 575px) {
+  header {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  header nav ul {
+    min-height: 80px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .about-me {
+    flex-direction: column;
+  }
+
+  .title {
+    border-bottom: 5px solid var(--font);
+    border-right: none;
+    text-align: center;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  .flex-parent-element {
+    flex-direction: column;
+  }
+}

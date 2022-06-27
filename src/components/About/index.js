@@ -7,7 +7,12 @@ function About() {
     <section class="flex-parent-element">
       <div class="flex-child-element">
         <h1 id="about">Paul Shertzinger</h1>
-        <img src={profileImage} className="my-2" alt="cover" />
+        <img
+          src={profileImage}
+          className="flex-child-element"
+          style={{ width: "100%" }}
+          alt="cover"
+        />
       </div>
       <div class="flex-child-element">
         <h1 id="about">About Me</h1>
