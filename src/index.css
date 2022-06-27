@@ -93,7 +93,7 @@ header a {
 }
 
 body {
-  background-image: url("./assets/header/background.jpg");
+  background-image: url("./assets/header/background.gif");
   background-color: #000000;
   background-size: cover;
 }
@@ -250,9 +250,19 @@ textarea {
 
 .img-thumbnail {
   width: auto;
-  height: 300px;
+  height: 200px;
   margin-bottom: 50px;
   cursor: pointer;
+  opacity: 0.8;
+  border-radius: 25px;
+}
+
+.img-thumbnail :hover {
+  width: auto;
+  height: 220px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  border-radius: 25px;
 }
 
 .modalBackdrop {
@@ -304,4 +314,14 @@ a {
 
 .navActive {
   color: var(--secondary);
+  font-size: x-large;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
 }
