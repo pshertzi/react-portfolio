@@ -17,7 +17,7 @@ function App() {
       name: "Portfolio",
       description: "List of past Projects",
     },
-    { name: "Summary", description: "Past expereince" },
+    { name: "Past positions", description: "Past expereince" },
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
