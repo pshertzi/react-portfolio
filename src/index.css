@@ -248,6 +248,11 @@ textarea {
   text-align: center;
 }
 
+.main-photo {
+    opacity: 0.8;
+    border-radius: 25px;
+}
+
 .img-thumbnail {
   width: auto;
   height: 200px;
@@ -283,6 +288,9 @@ textarea {
   margin: 50px auto;
   padding: 15px;
   width: 960px;
+  border-style: dotted;
+  border-color: #8c54ff;
+  border-radius: 25px;
 }
 
 .modalTitle {

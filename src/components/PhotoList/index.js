@@ -8,7 +8,8 @@ const PhotoList = ({ category }) => {
     {
       name: "Paul Shertzinger",
       category: "Welcome",
-      link: "https://www.canva.com/design/DAE1KUo7v6Y/U_nvagew7zFmpAW9l5n3kA/view?utm_content=DAE1KUo7v6Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
+      resume:
+        "https://www.canva.com/design/DAE1KUo7v6Y/U_nvagew7zFmpAW9l5n3kA/view?utm_content=DAE1KUo7v6Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink",
     },
     {
       name: "Hazai Watchers",
@@ -39,14 +40,20 @@ const PhotoList = ({ category }) => {
       category: "Summary",
       description:
         "Managed Front Office, F&B, and was acting MOD of hotel during COVID operations.  Scheduled and implemented procedures for outlet projects such as Dinner Under the Stars, holiday programing, and group events. Opened and managed new lobby bar post renovation.",
-      link: "https://www.marriott.com/en-us/hotels/hnmsi-sheraton-maui-resort-and-spa/overview/",
+      website:
+        "https://www.marriott.com/en-us/hotels/hnmsi-sheraton-maui-resort-and-spa/overview/",
+      resume:
+        "https://www.canva.com/design/DAEtGke3SKM/ml9TJ5wvh0dUrp2zdfEJ6A/edit?utm_content=DAEtGke3SKM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     },
     {
       name: "Jw Marriott",
       category: "Summary",
       description:
         "Managed Food and beverage operations for hotel's most popular outlet through multiple concerts, sporting events, and private parties for high profile guests.",
-      link: "https://www.marriott.com/en-us/hotels/tpajd-jw-marriott-tampa-water-street/events/meetings-at-jw-marriott-tampa-water-street/",
+      website:
+        "https://www.marriott.com/en-us/hotels/tpajd-jw-marriott-tampa-water-street/events/meetings-at-jw-marriott-tampa-water-street/",
+      resume:
+        "https://www.canva.com/design/DAEtGke3SKM/ml9TJ5wvh0dUrp2zdfEJ6A/edit?utm_content=DAEtGke3SKM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     },
   ]);
 

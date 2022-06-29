@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 const Modal = ({ onClose, currentPhoto }) => {
-  const { name, description, category, link, github, index } = currentPhoto;
+  const { name, description, category, link, github, resume, website, index } =
+    currentPhoto;
 
   return (
-    <div className="modalBackdrop">
+    <div className="modalBackdrop" onClick={onClose}>
       <div className="modalContainer">
         <h3 className="modalTitle">{name}</h3>
         <img
@@ -11,19 +12,18 @@ const Modal = ({ onClose, currentPhoto }) => {
           alt="current category"
         />
         <p>{description}</p>
-        <button type="button" onClick={onClose}>
-          Close this modal
-        </button>
-        <button>
-          <a
-            href={link}
-            style={{ textDecoration: "none", color: "#ffffff" }}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Check it out!
-          </a>
-        </button>
+        {link && (
+          <button>
+            <a
+              href={link}
+              style={{ textDecoration: "none", color: "#ffffff" }}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Check it out!
+            </a>
+          </button>
+        )}
         {github && (
           <button>
             <a
@@ -33,6 +33,30 @@ const Modal = ({ onClose, currentPhoto }) => {
               rel="noreferrer"
             >
               Github
+            </a>
+          </button>
+        )}
+        {resume && (
+          <button>
+            <a
+              href={resume}
+              style={{ textDecoration: "none", color: "#ffffff" }}
+              target="_blank"
+              rel="noreferrer"
+            >
+              View resume
+            </a>
+          </button>
+        )}
+        {website && (
+          <button>
+            <a
+              href={website}
+              style={{ textDecoration: "none", color: "#ffffff" }}
+              target="_blank"
+              rel="noreferrer"
+            >
+              View company website
             </a>
           </button>
         )}
