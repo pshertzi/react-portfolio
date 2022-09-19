@@ -8,21 +8,37 @@ function Projects() {
       link: "https://access-tennesee.herokuapp.com/",
       description:
         "This applications lets users interact with their favorite local businesses. They are able to communicate with business owners about what kind of accommodations might be needed for certain disabilities or impairments. In turn, the business is also able to provide information about accommodations they already provide and how to access those accommodations.",
-      github: "https://github.com/ashleyhodge/Access-Tennessee",
+      github: "https://github.com/pshertzi/Access-Tennessee",
     },
     {
       name: "Hanzai Watchers",
       link: "https://hanzai-watchers.herokuapp.com/",
       description:
         " Hanzai Watchers or Crime Watchers is an application made with React on the frontend and MongoDB on the backend that allows users to connect with other users around the world about crime information in their area. It also allows users to submit crime tips and search for crime in their zip code. The goal of this app is to make people feel like they have a voice. If you see a crime being committed or feel like you or someone else could be in trouble this is a perfect way to get in touch and figure out the best course of action whether it be turning to other users for guidance or submitting a tip.",
-      github: "https://github.com/ashleyhodge/anime_crime-watchers",
+      github: "https://github.com/pshertzi/anime_crime-watchers",
     },
+
+    {
+      name: "Employee Tracker",
+      link: "https://www.youtube.com/watch?v=55OnNXrOcmw",
+      description:
+        " A SQL database that tracks employees, their roles, and their respective department.",
+      github: "https://github.com/pshertzi/Employee-Tracker",
+    },
+
     {
       name: "Lettuce Talk",
       link: "https://pshertzi.github.io/Food-tracker-/",
       description:
         " This food tracker app allows an individual to track the nutrition of the foods they eat, search for recipes involving the foods they're craving, and search for nearby locations of grocery stores with those items available.",
       github: "https://github.com/pshertzi/Food-tracker-",
+    },
+    {
+      name: "Social Network API",
+      link: "https://youtu.be/a82ZvkkfJWg",
+      description:
+        " An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. This application uses Express, Node, MongoDB and Mongoose to allow users, thoughts, friend lists and thought reactions to be created, updated and deleted.",
+      github: "https://github.com/pshertzi/Social-Network-API",
     },
   ];
 

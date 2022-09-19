@@ -1,6 +1,6 @@
 import React from "react";
 import profileImage from "../../assets/cover/paul-photo.jpg";
-import Resume from "../../assets/Resume.pdf";
+import Resume from "../../assets/resume.pdf";
 
 function About() {
   return (
