@@ -11,7 +11,7 @@ function App() {
     {
       name: "Welcome",
       description: `Welcome to my Portfolio! I am a Full Stack web developer with a backgound in Business Managment. Ive recently earned a certificate in full stack development from the
-      Vanderbilt University Coding Boot Camp. Skilled in JavaScript, HTML, CSS, React.js, MySQL, NoSQL, responsive web design, Node, Express.`,
+      Vanderbilt University Coding Boot Camp. Skilled in Python, Tableau, JavaScript, HTML, CSS, React.js, MySQL, NoSQL, responsive web design, Node, Express.`,
     },
     {
       name: "Portfolio",
